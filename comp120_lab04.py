@@ -24,10 +24,10 @@ def uniques(obj: Union[int, list]) -> list[int]:
         return s
 
 
-def nested_list_contains(obj: Union[int, list]) -> bool:
-    """Return whether the given item appears in <objL.
+def nested_list_contains(obj: Union[int, list], target: int) -> bool:
+    """Return whether the given item appears in <obj>.
 
-    Note that if <obj> is an integer, this function checks whether <item> is
+    Note that if <obj> is an integer, this function checks whether <target> is
     equal to <obj>.
     """
 
