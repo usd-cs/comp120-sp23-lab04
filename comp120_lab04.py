@@ -3,6 +3,7 @@ Module: comp120_lab04
 
 Practice using recursion to deal with nested lists.
 """
+from typing import Union
 
 def uniques(obj: Union[int, list]) -> list[int]:
     """Returns a non-nested list of unique integers in <obj> (i.e. list with
@@ -14,6 +15,7 @@ def uniques(obj: Union[int, list]) -> list[int]:
     if isinstance(obj, int):
         # base case
         return [obj]
+
     else:
         # recursive case
         s = []
